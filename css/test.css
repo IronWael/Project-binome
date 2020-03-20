@@ -1,0 +1,290 @@
+body,html {
+  width: 100%;
+  font-family: Poppins, sans-serif, Montserrat;
+  overflow: auto;
+  overflow-x: hidden !important;
+}
+a {color: #999;}
+a:hover {color: #b48619;}
+a:focus {color: #b48619;}
+.my_p {color: #777;font-size: 14px;}
+.my_h {color: #b48619;}
+i {cursor: pointer;}
+.new_arrivals .my_p,
+.sections .my_p,
+.testimonials p {width: 50%;}
+
+.main_color {color: #b48619;}
+.second_color {color: #777;}
+a {color: #999;}
+a:hover {color: #b48619;}
+a:focus {color: #b48619;}
+
+
+
+.header-top {
+    background-color: rgba(0,0,0,0.8); 
+    color: #999;
+    top: 0;
+    z-index: 9999;
+    font-size: 15px;
+  }
+.header-top .sale span {color: #b48619;}
+
+.header-top .social i{cursor: pointer;}
+.header-top .social i:hover {color: #b48619;}
+
+
+a:hover {text-decoration: none;}
+
+.navbar {
+  background: rgb(0, 0, 0, 0.7);
+  color: #fff;
+  z-index: 9999;
+  position: absolute;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .active > .nav-link {color: #b48619; border-bottom: 1px solid #b48619; }
+.navbar-brand span {color: #b48619;}
+
+.navbar-collapse {font-size: 12px;}
+
+.navbar-dark .navbar-nav .nav-link {color: #fff;}
+
+.form-control:focus {box-shadow: none;}
+
+
+.navbar .nav_icons form {top: 43px; right: 102px; display: none;}
+.navbar .nav_icons i {cursor: pointer;}
+.navbar .nav_icons i:hover {color: #b48619;}
+.navbar .nav_icons .close_icon {left: 10px; top: 3px;}
+.navbar .nav_icons .close_icon:hover {color: rgb(190, 0, 0);}
+
+
+.opacity_0 {opacity: 0; z-index: -1;}
+
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #b48619;
+  color: rgba(0,0,0,0.8); ;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+i:hover .tooltiptext {
+  visibility: visible;
+}
+
+.navbar .nav_icons form input {
+  background-color: rgba(0,0,0,0.7);
+  border: 1px solid #000;
+  color: #fff;
+  border-radius: 20px;
+  width: 250px;
+  padding-right: 30px;
+}
+.navbar .nav_icons form button {
+  background: none;
+  color: #b48619;
+  right: 15px;
+  top: 6px;
+  border: none;
+}
+
+/*-------------- Start carousel -----------*/
+.carousel {background-color: #121113;}
+.carousel .carousel-item .text {top: 200px; right: 160px;}
+
+.carousel .carousel-item .text p:nth-child(1) { font-size: 25px;}
+.carousel .carousel-item .text p:nth-child(2) { font-size: 70px;}
+.carousel .carousel-item .text p:nth-child(3) { font-size: 15px; letter-spacing: 10px;}
+.carousel .carousel-item .text button {
+  background: none;
+  padding: 7px 35px;
+  border: 1px solid #fff;
+  font-size: 12px;
+  outline: none;
+}
+.carousel .carousel-item .text button:hover {
+  background-color: #b48619;
+  border: 1px solid #b48619;
+}
+/*-------------- End carousel -----------*/
+
+
+
+.sections {padding: 100px 0;}
+
+.sections *:not(a) {
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;  
+}
+
+.sections .bg .bg_image {
+  position: inherit;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.sections .overlay {
+  position: inherit;
+  background-color: rgb(0, 0, 0, 0.2);
+  z-index: 2;
+  opacity: 0;
+}
+
+.sections .content {
+  z-index: 2; 
+  color: #555;
+  top: 60px;
+  left: 35px;
+}
+
+.sections .content p {font-size: 25px;}
+.sections .content a {
+  color: #555;
+  font-size: 20px;
+  border-bottom: 2px solid;
+}
+.sections .content a:hover {color: #b48619;}
+
+.sections .row > div:hover .bg_image {transform: translateX(15%);}
+
+.sections .row > div:hover  .overlay {opacity: 1;}
+
+/*+++++++++++++++++++++++++++*/
+.sections .womens {height: 300px;background-color: #f8f6f7;}
+.sections .womens .bg .bg_image {background-image: url(../images/bg_sections/01.jpg);}
+
+.sections .men {height: 300px;background-color: #f2d4b0;}
+.sections .men .bg .bg_image {background-image: url(../images/bg_sections/02.jpg);}
+
+.sections .kids {height: 300px;background-color: #f4f4f4;}
+.sections .kids .bg .bg_image {background-image: url(../images/bg_sections/03.jpg);}
+
+.sections .shoes {height: 300px;background-color: #f4f4f4;}
+.sections .shoes .bg .bg_image {background-image: url(../images/bg_sections/04.jpg);}
+
+.sections .watches {height: 300px;background-color: #e7eaef;}
+.sections .watches .bg .bg_image {background-image: url(../images/bg_sections/05.jpg);}
+
+.sections .shirts {height: 300px;background-color: #4984ac;}
+.sections .shirts .bg .bg_image {background-image: url(../images/bg_sections/06.jpg);}
+
+.sections .accessories {height: 300px;background-color: #f2d4b0;}
+.sections .accessories .bg .bg_image {background-image: url(../images/bg_sections/07.jpg);}
+
+.sections .bags {height: 300px;background-color: #f9f9f9;}
+.sections .bags .bg .bg_image {background-image: url(../images/bg_sections/08.jpg);}
+
+.sections .coolmax {height: 300px;background-color: #dbe9e9;}
+.sections .coolmax .bg .bg_image {background-image: url(../images/bg_sections/10.jpg);}
+
+
+.footer .contact {background-color: #222; padding: 100px 0;}
+.footer h5 {border-bottom: 1px solid #5f5f5f; font-size: 15px;}
+
+.footer .contact input, 
+.footer .contact button {background: none; border: 1px solid #5f5f5f;}
+.footer .contact button:hover {background-color: #b48619;}
+.footer li {cursor: pointer;}
+.footer li:hover {color: #b48619; padding-left: 5px;}
+
+.footer .copyright {background-color: #000;}
+.footer a {color: #FFF;}
+
+
+
+.sec_name.clothes {
+  background: url(../images1/vetements/clothes_cover.jpg) center center no-repeat fixed;
+  height: 100vh;
+  background-size: cover;
+}
+
+.sec_name .overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+.sec_name .text {
+  bottom: 30%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -30%);
+  -moz-transform: translate(-50%, -30%);
+  -ms-transform: translate(-50%, -30%);
+  -o-transform: translate(-50%, -30%);
+  transform: translate(-50%, -30%);
+}
+.sec_name .text h1 {font-size: 80px;}
+.sec_name .text a {font-size: 20px;  color: #fff; border-right: 1px solid #fff;}
+.sec_name .text span {font-size: 20px; color: #b48619;}
+.sec_name .text a:hover {color: #b48619;}
+
+.sec_content { margin-bottom: 100px;}
+.sec_content .sec_head {background-color: #f5f5f5;}
+.sec_content .sec_head a:hover {color: #b48619;}
+
+.sec_content .side h5 {color: #b48619; border-top: 4px solid;}
+.sec_content .side a:hover{color: #b48619;}
+.sec_content .side label {color: #555;}
+.sec_content .side button {
+  background-color: rgb(43, 43, 43);
+  color: #FFF;
+  border: none;
+  padding: 5px 20px;
+}
+.sec_content .side button:hover {background-color: #b48619;}
+
+/*-------------- porducts ----------*/
+
+.sec_content .products .top {left: 0; top: 0;}
+.sec_content .products .quickview {
+  background-color: rgb(0, 0, 0, 0.7);
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.sec_content .products .quickview:hover {background-color: #b48619; color: #000;}
+
+.sec_content .products .option {opacity: 0;}
+.sec_content .products .option .add_chart {cursor: pointer;}
+.sec_content .products .option .add_chart:hover {color: #b48619;}
+.sec_content .products .option .fav {cursor: pointer;}
+.sec_content .products .option .fav:hover {color: #dc3545;}
+
+/*on hover on the box shows the top pic , the quickview and 
+the option (the shopping bag, add to chart and the heart) 
+and hides 
+*/
+.sec_content .products .box:hover .top {opacity: 0;}
+.sec_content .products .box:hover .quickview {opacity: 1;}
+.sec_content .products .box:hover .option {opacity: 1;}
+
+
+/*************** End section content ******************/
