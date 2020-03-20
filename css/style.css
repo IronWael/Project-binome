@@ -1,7 +1,7 @@
 body {
     width: 100%;
     font-family:  Poppins, sans-serif, Montserrat;
-    overflow: hidden;
+    overflow: auto;
     overflow-x: hidden !important;
 }
 a {color: #999;}
