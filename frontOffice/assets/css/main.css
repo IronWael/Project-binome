@@ -1,0 +1,232 @@
+body,html {
+    width: 100%;
+    font-family: Poppins, sans-serif, Montserrat;
+    overflow: auto;
+    overflow-x: hidden !important;
+  }
+  
+  a {color: #999;}
+  a:hover {color: #b48619;}
+  a:focus {color: #b48619;}
+  
+  
+  
+  .header-top {
+      background-color: rgba(0,0,0,0.8); 
+      color: #999;
+      top: 0;
+      z-index: 9999;
+      font-size: 15px;
+    }
+  .header-top .sale span {color: #b48619;}
+  
+  .header-top .social i{cursor: pointer;}
+  .header-top .social i:hover {color: #b48619;}
+  
+  
+  a:hover {text-decoration: none;}
+
+ /******************** start navbar ********************/
+
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  z-index: 9999;
+  position: absolute;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .active > .nav-link {color: #b48619; border-bottom: 1px solid #b48619; }
+.navbar-brand span {color: #b48619;}
+
+.navbar-collapse {font-size: 12px;}
+
+.navbar-dark .navbar-nav .nav-link {color: #fff;}
+
+.form-control:focus {box-shadow: none;}
+
+
+.navbar .nav_icons form {top: 43px; right: 102px; display: none;}
+.navbar .nav_icons i {cursor: pointer;}
+.navbar .nav_icons i:hover {color: #b48619;}
+.navbar .nav_icons .close_icon {left: 10px; top: 3px;}
+.navbar .nav_icons .close_icon:hover {color: rgb(190, 0, 0);}
+
+.opacity_0 {opacity: 0; z-index: -1;}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #b48619;
+  color: rgba(0,0,0,0.8); ;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+i:hover .tooltiptext {
+  visibility: visible;
+}
+
+.navbar .nav_icons form input {
+  background-color: rgba(0,0,0,0.7);
+  border: 1px solid #000;
+  color: #fff;
+  border-radius: 20px;
+  width: 250px;
+  padding-right: 30px;
+}
+
+.navbar .nav_icons form button {
+  background: none;
+  color: #b48619;
+  right: 15px;
+  top: 6px;
+  border: none;
+}
+
+
+
+/*************************-----table-------*****************/
+
+.table-content table {
+  border-color: #e5e5e5;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px 0 0 1px;
+  margin: 0 0 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.table-content table th  {
+  border-bottom: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+.table-content table td  {
+  border-bottom: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+.table-content table td input {
+  background: #e5e5e5 none repeat;
+  border-radius: 3px;
+  border: medium none;
+  font-size: 15px;
+  font-weight: normal;
+  height: 40px;
+  padding: 0  5PX 0 10px;
+  width: 60px;
+}
+
+
+.table-content table th {
+  border-top: medium none;
+  font-weight: normal;
+  padding: 20px 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.table-content table td .product-thumbnail {
+  width: 130px;
+}
+
+.table-content table td {
+  border-top: medium none;
+  padding: 20px 10px;
+  vertical-align: middle;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.product-thumbnail > a {
+  display: block;
+}
+
+.product-thumbnail img {
+  width: 100px;
+}
+
+
+
+/*******************footer*********************/
+
+/******************* footer ********************/
+.footer .contact {background-color: #222; padding: 100px 0;}
+.footer h5 {border-bottom: 1px solid #5f5f5f; font-size: 15px;}
+
+.footer .contact input, 
+.footer .contact button {background: none; border: 1px solid #5f5f5f;}
+.footer .contact button:hover {background-color: #b48619;}
+.footer li {cursor: pointer;}
+.footer li:hover {color: #b48619; padding-left: 5px;}
+
+.footer .contact .social a{
+  display: inline-block;
+  margin-right: 15px;
+  color:rgba(255, 255, 255, 0.8)
+}
+.footer .contact .social a:hover{
+  color: #b48614;
+}
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+.widget .app-downold img{
+  max-width: 120px;
+  margin-right: 10px;
+  display: inline-block;
+}
+/* footer copy right */
+.footer .copyright {background-color: #000;}
+.footer a {color: #FFF;}
+
+.title1{
+  margin-top: 70px ;
+}
+
+/******** ad cart ************/
+
+.button-cart input {
+  background: #b48614 none repeat ;
+  box-shadow: none;
+  color: #fff;
+  display: inline-block;
+  border: medium;
+  float: left; 
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  height: 40px;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+.button-cart a {
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  padding: 0 15px;
+  text-transform: uppercase;
+  background: #b48614 none repeat ;
+}
