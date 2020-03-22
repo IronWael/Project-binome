@@ -1,0 +1,204 @@
+body {
+    width: 100%;
+    font-family:  Poppins, sans-serif, Montserrat;
+    overflow: auto;
+    overflow-x: hidden !important;
+    background-color: #f1f4f7;
+    ;
+}
+a {color: #999;}
+a:hover{color: #b48614;}
+a:focus{color: #b48614 ;}
+a:hover{text-decoration: none;}
+
+/*******Nav Bar*******/
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    z-index: 9999;
+    /**position: absolute;**/
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .active > .nav-link {color: #b48619; border-bottom: 1px solid #b48619; }
+.navbar-brand span {color: #b48619;}
+
+.navbar-collapse {font-size: 12px;}
+
+.navbar-dark .navbar-nav .nav-link {color: #fff;}
+
+.form-control:focus {box-shadow: none;}
+
+
+.navbar .nav_icons form {top: 43px; right: 102px; display: none;}
+.navbar .nav_icons i {cursor: pointer;}
+.navbar .nav_icons i:hover {color: #b48619;}
+.navbar .nav_icons .close_icon {left: 10px; top: 3px;}
+.navbar .nav_icons .close_icon:hover {color: rgb(190, 0, 0);}
+
+.opacity_0 {opacity: 0; z-index: -1;}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #b48619;
+    color: rgba(0,0,0,0.8); ;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+
+  .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+  i:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .navbar .nav_icons form input {
+    background-color: rgba(0,0,0,0.7);
+    border: 1px solid #000;
+    color: #fff;
+    border-radius: 20px;
+    width: 250px;
+    padding-right: 30px;
+  }
+
+  .navbar .nav_icons form button {
+    background: none;
+    color: #b48619;
+    right: 15px;
+    top: 6px;
+    border: none;
+  }
+
+/****Side Bar****/
+
+
+.sidebar {
+    display: block;
+    position: fixed;
+    top:  55px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #fff;
+}
+
+
+/***User Status**/
+.profile-sidebar {
+    padding: 5px 0;
+    border-bottom: 1px solid #e9ecf2 !important;
+}
+/**Profile Pic**/
+.profile-userpic img {
+    float: left;
+    margin: 10px 0px 0px 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 9999px !important;
+}
+.profile-usertitle {
+    float: left;
+    text-align: left;
+    margin: 10px 0 0 12px;
+}
+.profile-usertitle-name {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.profile-usertitle-status {
+    text-transform: uppercase;
+    color: #AAA;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.indicator {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 9999px;
+    margin-right: 5px;
+}
+.label-success {
+    background-color: #8ad919;
+}
+.divider, .clear {
+    clear: both;
+}
+/**End user Status**/
+
+
+.sidebar ul {
+    margin: 20px 0px;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.list{
+    
+    font-size: 20px;
+    /*margin: 0px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;*/
+    height: 60px;
+    border-bottom: 1px solid #e9ecf2 !important;
+    box-sizing: border-box;
+    color: #fff !important;
+    border-radius: 20px;
+    
+    
+    
+
+}
+.list:hover{
+    cursor: pointer;
+    background-color: #30a5ff;
+    text-decoration-color: #b48619;
+    
+    
+} 
+
+.main{
+    position: relative;
+    left: 237px;
+}
+.breadcrumb{
+    box-sizing: border-box;
+    background: #e9ecf2;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 10px 15px 10px 15px;
+    
+}
+h1.header{
+    font-weight: 150 !important;
+    font-size: 40px !important;
+    padding-top: 20px;
+    padding-left: 20px;
+}

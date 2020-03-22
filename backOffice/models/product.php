@@ -3,6 +3,7 @@ class Product{
 
     public $id;
     public $type;
+    public $name;
     public $genre;
     public $marque;
     public $description;
@@ -27,7 +28,7 @@ class Product{
         
 
         $requette = "INSERT INTO products 
-        VALUES(null,'$this->type','$this->genre','$this->marque','$this->description','$this->price','$this->discount'
+        VALUES(null,'$this->type','$this->name','$this->genre','$this->marque','$this->description','$this->price','$this->discount'
         ,'$this->imagef','$this->imageb');";
         $rowInserted = $base->exec($requette);
         if ($rowInserted == 1) {
@@ -45,6 +46,7 @@ class Product{
         SET 
         type ='$this->type' ,
         genre ='$this->genre',
+        name = '$this->name',
         marque='$this->marque',
         description='$this->description'
         price=$this->price,
