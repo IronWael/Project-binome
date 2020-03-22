@@ -55,7 +55,7 @@
             <ul class="navbar-nav mx-auto font-weight-bold">
 
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="index.html" data-page="page01">acceuil <span 
+                    <a class="nav-link" href="../../backOffice/views/index.html" data-page="page01">acceuil <span 
                     class="sr-only">(current)</span></a>
                 </li>
 
@@ -99,7 +99,9 @@
                 <span class="tooltiptext">s'inscrire</span>
             </i></a>
 
-            <a href="../../frontOffice/views/cart.html"><i class="fas fa-shopping-cart px-2 border-left">
+            <a href="../../frontOffice/views/cart.html">
+              <i class="fas fa-shopping-cart px-2 border-left"></i>
+                <span id="shopcartnbr"  class="badge badge-pill badge-primary">0</span>
             </i></a>  
 
 
@@ -261,7 +263,7 @@
               <p class="price font-weight-bold text-danger">$1,732</p>
             </div>
             <div class="option text-secondary border-top py-2">
-              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag" data-toggle="modal" data-target="#exampleModal"  onclick="addtocart('pantalon amiri')" href="#"></i>&nbsp; Add to chart</div>
               <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
             </div>
           </div>
@@ -894,6 +896,26 @@
 
 
 
+       <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body">
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">fermer</button>
+        <a href="vetements.html"><button type="button" class="btn btn-primary">continuer a shoper</button></a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
