@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--Font awesome library-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" />
+  <!--bootstrap file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../../backOffice/assets/css/style.css">
+  <link rel="stylesheet" href="../../backOffice/assets/css/test.css">
+
+  
+</head>
+
+<body>
+
+  <!--start header-->
+  <div class="header-top py-2 w-100 position-relative">
+    <div class="container-md">
+        <div class="row">
+            <div class="call col-md-4 text-md-left d-none d-md-block">Appelez: (+216) 98 744 846</div>
+            <div class="social col-6 col-md-4 text-right">
+                    <a href="https://www.facebook.com" target="_blank"><i
+                        class="fab fa-facebook-f px-2"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i
+                        class="fab fa-twitter px-2 border-left"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i
+                        class="fab fa-youtube px-2 border-left"></i></a>
+                    <a href="http://www.instagram.com/" target="_blank"><i
+                        class="fab fa-instagram px-2 border-left"></i></a>            
+            </div>
+            <div class="topbar col-md-4 text-right">
+                    <a  class="nav-link dropdown-toggle"  data-toggle="dropdown"href="#">
+                    <img class="mr-2" src="../assets/images1/Tunisia-Flag-icon.png">TN / DT
+                    </a>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+<!--end header-->
+
+<!--start navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark py-1 py-md-2 text-capitalize w-100">
+    <a class="navbar-brand ml-lg-5 ml-sm-0" href="index.html" data-page="page01">Echri<span>Tounsi.</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-mobile"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container-md">
+        <div class="collapse navbar-collapse col-xs-12" id="nav-mobille">
+            <ul class="navbar-nav mx-auto font-weight-bold">
+
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="index.html" data-page="page01">acceuil <span 
+                    class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="../../frontOffice/views/vetements.html" data-page="page02">vetements</a>
+                </li>
+
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="pages/shoes.html" data-page="page02">chaussures</a>
+                </li>
+
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="pages/watches.html" data-page="page02">montres</a>
+                </li>
+
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="pages/bags.html" data-page="page02">sacs</a>
+                </li>
+
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="pages/accessory.html" data-page="page06">accessoires</a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="nav_icons position-relative ml-auto">
+
+            <i class="search_close_open fas fa-search px-2 position-relative">
+                <span class="tooltiptext">Chercher</span>
+            </i>
+
+            <i class="search_close_open close_icon fas fa-times position-absolute opacity_0">
+                <span class="tooltiptext">Fermer</span>
+            </i>
+
+            <i class="fas fa-sign-in-alt px-2 border-left">
+                <span class="tooltiptext">S'identifier</span>
+            </i>
+            
+            <a href="../../backOffice/views/admins/register.php"><i class="fas fa-user-plus px-2 border-left">
+                <span class="tooltiptext">s'inscrire</span>
+            </i></a>
+
+            <a href="../../frontOffice/views/cart.html"><i class="fas fa-shopping-cart px-2 border-left">
+            </i></a>  
+
+
+            <form class="search_bar form-inline my-2 my-lg-0 position-absolute">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="position-absolute rounded-circle" type="submit">
+                    <i class="fas fa-search "></i>
+                </button>
+            </form>
+        </div>
+    </div>    
+</nav>
+
+  <div class="sec_name clothes position-relative">
+    <div class="overlay position-absolute"></div>
+    <div class="text text-capitalize text-center text-white position-absolute">
+      <h1 class="text-uppercase">vetements</h1>
+      <a class="px-2" href="../index.html" data-page="page01">accueil</a>
+      <span class="px-2">vetements</span>
+    </div>
+  </div>
+
+  <div class="sec_content container">
+    <div class="row">
+      <div class="sec_head col-12 py-3 my-5 font-weight-bold">
+        <div class="float-left text-uppercase">vetements</div>
+        <div class="float-right text-capitalize">
+          <a href="../../backOffice/views/index.html" data-page="page01"><i class="fas fa-home fa-lg"></i></a>
+          <!--<span class="my_p px-2"></span>-->
+          <i class="fas fa-angle-right px-2"></i>
+          <span class="main_color">vetements</span>
+        </div>
+      </div>
+
+
+      <div class="side col-md-3 pb-5">
+        <div class="categories">
+          <h5 class="text-uppercase py-3">categories
+            <i class="open_opotions_01 float-right text-black fas fa-plus fa-xs  d-md-none"></i></h5>
+          <div class="options_01 text-capitalize d-none d-md-block">
+            <ul class=" list-unstyled ml-3 ">
+              <a href="vetements.html" data-page="page02">
+                <li>hommes (135)</li>
+              </a>
+              <a href="clothes.html" data-page="page02">
+                <li>femmes (211)</li>
+              </a>
+              <a href="clothes.html" data-page="page02">
+                <li>enfants (174)</li>
+              </a>
+
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="custom_search">
+          <h5 class="text-uppercase py-3">custom search <i
+              class="open_opotions_02 float-right text-black fas fa-plus fa-xs d-md-none"></i></h5>
+          <div class="options_02 text-capitalize d-none d-md-block">
+            <form>
+              <div class="color ml-3">
+                <p class="font-weight-bold">type</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Pantalons (67)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Pulls, Gilets et Sweats Homme(37)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    T-shirts, polos et chemises homme (112)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Shorts et bermudas (54)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Manteaux et blousons (54)
+                  </label>
+                </div>
+              </div>
+
+              <div class="brand ml-3">
+                <p class="font-weight-bold mt-4">marques</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    divers (345)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    nike (472)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    adidas (216)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    puma (216)
+                  </label>
+                </div>
+              </div>
+              <button class="my-4 ml-3" type="submit">search</button>
+            </form>
+          </div>
+
+        </div>
+        <div class="sec_ad p-3 d-none d-md-block">
+          <img class="w-100" src="../assets/images1/clothes/ad.jpg" alt="ad">
+        </div>
+
+
+      </div>
+
+
+
+
+
+      <div class=" products col-md-9">
+        <div class="row">
+
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100" src="../assets/images1/vetements/hommes/pantalons/pantalon_amiri_1-2.jpg" alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/pantalons/pantalon_amiri_1-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">pantalon amiri</p>
+              <p class="price font-weight-bold text-danger">$1,732</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100" src="../assets/images1/vetements/hommes/Pulls, Gilets et Sweats/pulls_GUCCI_4-2(1250).jpg"
+                alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/Pulls, Gilets et Sweats/pulls_GUCCI_4-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">pull gucci</p>
+              <p class="price font-weight-bold text-danger">$1250</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100"
+                src="../assets/images1/vetements/hommes/T-shirts, polos et chemises/tshirts_LOEWE_1-2(208).jpg" alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/T-shirts, polos et chemises/tshirts_LOEWE_1-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">t-shirt LOEWE</p>
+              <p class="price font-weight-bold text-danger">$208</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100" src="../assets/images1/vetements/hommes/pantalons/pantalon_amiri_3-2(583).jpg" alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/pantalons/pantalon_amiri_3-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">pantalon amiri</p>
+              <p class="price font-weight-bold text-danger">$583</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100"
+                src="../assets/images1/vetements/hommes/Pulls, Gilets et Sweats/pulls_2 MONCLER 1952_1-2(395).jpg" alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/Pulls, Gilets et Sweats/pulls_2 MONCLER 1952_1-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">shirt 2 MONCLER 1952</p>
+              <p class="price font-weight-bold text-danger">$395</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100"
+                src="../assets/images1/vetements/hommes/T-shirts, polos et chemises/tshirts_RAF SIMONS_2-2(190).jpg"
+                alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/T-shirts, polos et chemises/tshirts_RAF SIMONS_2-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">t-shirt RAF SIMONS_</p>
+              <p class="price font-weight-bold text-danger">$190</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100" src="../assets/images1/vetements/hommes/pantalons/pantalon_aries_1-2(170).jpg" alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/pantalons/pantalon_aries_1-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">pantalon aries</p>
+              <p class="price font-weight-bold text-danger">$170</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100" src="../assets/images1/vetements/hommes/Pulls, Gilets et Sweats/pulls_GIVENCHY_2-2(437).jpg"
+                alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/Pulls, Gilets et Sweats/pulls_GIVENCHY_2-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">shirt GIVENCHY</p>
+              <p class="price font-weight-bold text-danger">$437</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100"
+                src="../assets/images1/vetements/hommes/T-shirts, polos et chemises/tshirts_JACQUEMUS_3-2(175).jpg" alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/T-shirts, polos et chemises/tshirts_JACQUEMUS_3-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">t-shirt JACQUEMUS</p>
+              <p class="price font-weight-bold text-danger">$175</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100" src="../assets/images1/vetements/hommes/pantalons/pantalon_fendi_1-2(408).jpg" alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/pantalons/pantalon_fendi_1-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">pantalon fendi</p>
+              <p class="price font-weight-bold text-danger">$480</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100"
+                src="../assets/images1/vetements/hommes/Pulls, Gilets et Sweats/pulls_JOHN ELLIOTT_3-2(331).jpg" alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/Pulls, Gilets et Sweats/pulls_JOHN ELLIOTT_3-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">pull JOHN ELLIOTT</p>
+              <p class="price font-weight-bold text-danger">$331</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100"
+                src="../assets/images1/vetements/hommes/T-shirts, polos et chemises/tshirts_GIVENCHY_4-2(254).jpg" alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/T-shirts, polos et chemises/tshirts_GIVENCHY_4-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">t-shirt GIVENCHY</p>
+              <p class="price font-weight-bold text-danger">$254</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100" src="../assets/images1/vetements/hommes/pantalons/pantalon_givenchy_1-2(470).jpg" alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/pantalons/pantalon_givenchy_1-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">pantalon givenchy</p>
+              <p class="price font-weight-bold text-danger">$470</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100"
+                src="../assets/images1/vetements/hommes/Pulls, Gilets et Sweats/pulls_MARTINE ROSE_5-2(720).jpg" alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/Pulls, Gilets et Sweats/pulls_MARTINE ROSE_5-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">pull MARTINE ROSE</p>
+              <p class="price font-weight-bold text-danger">$720</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100"
+                src="../assets/images1/vetements/hommes/T-shirts, polos et chemises/tshirts_BALENCIAGA_5-2(329).jpg" alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/T-shirts, polos et chemises/tshirts_BALENCIAGA_5-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">t-shirt BALENCIAGA</p>
+              <p class="price font-weight-bold text-danger">$329</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100" src="../assets/images1/vetements/hommes/pantalons/pantalon_gucci_1-2(725).jpg" alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/pantalons/pantalon_gucci_1-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">pantalon gucci</p>
+              <p class="price font-weight-bold text-danger">$725</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100"
+                src="../assets/images1/vetements/hommes/Pulls, Gilets et Sweats/pulls_SAINT LAURENT_6-2(433).jpg" alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/Pulls, Gilets et Sweats/pulls_SAINT LAURENT_6-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">pull SAINT LAURENT</p>
+              <p class="price font-weight-bold text-danger">$433</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100"
+                src="../assets/images1/vetements/hommes/T-shirts, polos et chemises/tshirts_AMIRI_6-2(233).jpg"
+                alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/T-shirts, polos et chemises/tshirts_AMIRI_6-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">t-shirt AMIRI</p>
+              <p class="price font-weight-bold text-danger">$233</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100" src="../assets/images1/vetements/hommes/pantalons/pantalon_gucci_2-2(725).jpg" alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/pantalons/pantalon_gucci_2-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">pantalon gucci</p>
+              <p class="price font-weight-bold text-danger">$725</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100"
+                src="../assets/images1/vetements/hommes/Pulls, Gilets et Sweats/pulls_MAISON KITSUNÉ_7-2(133).jpg" alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/Pulls, Gilets et Sweats/pulls_MAISON KITSUNÉ_7-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">pull MAISON KITSUNÉ</p>
+              <p class="price font-weight-bold text-danger">$133</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100"
+                src="../assets/images1/vetements/hommes/T-shirts, polos et chemises/tshirts_GUCCI_7-2(375).jpg"
+                alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/T-shirts, polos et chemises/tshirts_GUCCI_7-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">t-shirt GUCCI</p>
+              <p class="price font-weight-bold text-danger">$375</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100" src="../assets/images1/vetements/hommes/pantalons/pantalon_polo_1-2(104).jpg" alt="img1">
+              <img class="top w-100 position-absolute" src="../assets/images1/vetements/hommes/pantalons/pantalon_polo_1-1.jpg"
+                alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">pantalon polo</p>
+              <p class="price font-weight-bold text-danger">$104</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100" src="../assets/images1/vetements/hommes/Pulls, Gilets et Sweats/pulls_OFF-WHITE_8-2(341).jpg"
+                alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/Pulls, Gilets et Sweats/pulls_OFF-WHITE_8-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">pull OFF-WHITE</p>
+              <p class="price font-weight-bold text-danger">$341</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100"
+                src="../assets/images1/vetements/hommes/T-shirts, polos et chemises/tshirts_FENDI_8-2(358).jpg"
+                alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/T-shirts, polos et chemises/tshirts_FENDI_8-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">t-shirt FENDI</p>
+              <p class="price font-weight-bold text-danger">$358</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100" src="../assets/images1/vetements/hommes/pantalons/pantalon_saint-laurent_1-2.jpg" alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/pantalons/pantalon_saint-laurent_1-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">pantalon saint laurent</p>
+              <p class="price font-weight-bold text-danger">$104</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4 box mb-4">
+            <div class="image position-relative overflow-hidden">
+              <img class="w-100"
+                src="../assets/images1/vetements/hommes/Pulls, Gilets et Sweats/pulls_PALM ANGELS_9-2(458).jpg" alt="img1">
+              <img class="top w-100 position-absolute"
+                src="../assets/images1/vetements/hommes/Pulls, Gilets et Sweats/pulls_PALM ANGELS_9-1.jpg" alt="img1">
+              <div class="quickview position-absolute w-100 main_color text-center"><i class="fas fa-eye"></i> Quickview
+              </div>
+            </div>
+            <div class="details">
+              <div class="rating">
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+                <span><i class="fas fa-star fa-xs text-secondary"></i></span>
+              </div>
+              <p class="name text-capitalize my-0 text-secondary">pull PALM ANGELS</p>
+              <p class="price font-weight-bold text-danger">$458</p>
+            </div>
+            <div class="option text-secondary border-top py-2">
+              <div class="add_chart float-left"><i class="fas fa-shopping-bag"></i>&nbsp; Add to chart</div>
+              <div class="fav float-right"><i class="fas fa-heart fa-lg"></i></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="footer text-white">
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mr-4 pb-2 mb-5 font-weight-bold">contactez nous</h5>
+
+                    <div class="row my-4">
+                        <div class="col-2 pt-2"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="col-10 px-0">
+                            Formalab, Rue Palestine,19 rue Yahia Turki <br> Lafayette Tunis.
+                        </div>
+                    </div>
+
+                    <div class="row my-4">
+                        <div class="col-2 pt-2"><i class="fas fa-phone-alt"></i></div>
+                        <div class="col-10 px-0">
+                            (+216) 98 744 846 <br>
+                            (+216) 54 736 117
+                        </div>
+                    </div>
+
+                    <div class="row my-4">
+                        <div class="col-2 pt-2"><i class="fas fa-envelope-open"></i></div>
+                        <div class="col-10 px-0">
+                            waelmkacher2020@gmail.com <br>
+                            ramziattig@gmail.com
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="text-uppercase  mr-4 pb-2 mb-5  font-weight-bold">catégories</h5>
+                    <ul class="list-unstyled text-capitalize">
+                        <a href="index.html">
+                            <li class="w-75 border-bottom pb-1 mb-1 overflow-hidden" data-page="page01">accueil <i
+                                    class="fas fa-angle-right fa-sm float-right pt-2"></i></li>
+                        </a>
+                        <a href="../../frontOffice/views/vetements.html">
+                            <li class="w-75 border-bottom pb-1 mb-1 overflow-hidden" data-page="page02">vettements
+                                <i class="fas fa-angle-right fa-sm float-right pt-2"></i></li>
+                        </a>
+
+                        <a href="pages/shoes.html">
+                            <li class="w-75 border-bottom pb-1 mb-1 overflow-hidden" data-page="page04">chaussures<i
+                                    class="fas fa-angle-right fa-sm float-right pt-2"></i></li>
+                        </a>
+                        <a href="pages/watches.html">
+                            <li class="w-75 border-bottom pb-1 mb-1 overflow-hidden" data-page="page05">montres <i
+                                    class="fas fa-angle-right fa-sm float-right pt-2"></i></li>
+                        </a>
+                        <a href="pages/bags.html">
+                            <li class="w-75 border-bottom pb-1 mb-1 overflow-hidden" data-page="page06">sacs <i
+                                    class="fas fa-angle-right fa-sm float-right pt-2"></i></li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mr-4 pb-2 mb-5  font-weight-bold">newsletter</h5>
+                    <p class="my_p mb-4">BÉNÉFICIEZ EN EXCLUSIVITÉ D’OFFRES & DE MISES À JOUR</p>
+                    <input class="py-2 px-3 my-3 text-white" type="email" name="e-mail" id="mail"
+                        placeholder="Enterez votre E-mail">
+                    <button class="py-1 px-3 text-white text-capitalize" type="submit">S'abonner</button>
+                    
+                    <div class="widget pb-2 mb-4">
+                        <h3 class="widget-title text-light pb-1">Download our app</h3>
+                        <div class="app-downold">
+                            <a href="#">
+                                <img src="../assets/images1/available-google.png" alt="play-store">
+                            </a>
+                            <a href="#">
+                                <img src="../assets/images1/store.png" alt="app-store">
+                            </a>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- footer copyrigth-->
+      <div class="copyright">
+          <div class="container">
+             <div class="inner">
+                 <div class="row">
+                   <div class="col-lg-6 col-12 mr-left">
+                    <p>&copy; 2020 all rights reserved Wael Mkacher & Ramzi Attig</p>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <img src="../assets/images1/payments.png" alt="">
+                    </div>  
+                </div>
+            </div>
+          </div>
+    </div>
+</div>     
+
+
+
+
+  <!-- Jquery plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Bootstrap plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
