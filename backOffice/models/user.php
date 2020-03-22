@@ -17,8 +17,11 @@ class User{
 
         $rowInserted = $base->exec($requette);
 
+
+
         if ($rowInserted == 1) {
-            header('location:../views/index.html');
+
+            header('location:../views/admins/dashboard.php?fn='.$this->firstname.'&&ln='.$this->lastname.'&&pi='.$this->image);
         } else {
             echo "SQL Error";
         }
