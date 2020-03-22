@@ -1,3 +1,16 @@
+<?php
+$firstname = $_REQUEST['fn'];
+$lastname = $_REQUEST['ln'];
+$image = $_REQUEST['pi'];
+
+?>
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,10 +71,10 @@
         <div class="sidebar col-sm-3 col-lg-2">
             <div class="profile-sidebar">
                 <div class="profile-userpic">
-                    <img src="../../assets/images1/men.jpg" alt="">
+                    <img src="../../assets/image/<?php echo $image?>" alt="">
                 </div>
                 <div class="profile-usertitle">
-                    <div class="profile-usertitle-name">Username</div>
+                    <div class="profile-usertitle-name"><?php echo $firstname?> <?php echo $lastname?></div>
                     <div class="profile-usertitle-status">
                         <span class="indicator label-success"></span>
                         Online
