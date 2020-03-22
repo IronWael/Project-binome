@@ -1,6 +1,7 @@
 create table products(
     id int AUTO_INCREMENT,
     type varchar(100),
+    name varchar(255),
     genre varchar(50),
     marque varchar(100),
     description text,
@@ -8,7 +9,7 @@ create table products(
     discount int,
     imagef varchar(255),
     imageb varchar(255),
-    constraint pk_books PRIMARY KEY (id),
+    constraint pk_books PRIMARY KEY (id)
     
 );
 create table users(
