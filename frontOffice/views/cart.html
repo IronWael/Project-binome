@@ -131,21 +131,25 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            <tr>
+                            <tr id="L1">
                                 <td class="product-thumbnail"><a href="#"><img src="../assets/images1/filter/product-12.jpg"> </a></td>
                                 <td><a href="#">sac </a></td>
                                 <td><a href="#">90 DT</a></td>
                                 <td><input type="number" value="1"></td>
                                 <td>90 DT</td>
-                                <td><a href="#"><i class="fa fa-times"></i></a></td>
+                                <td>
+                                    <button class="btn btn-sm btn-danger" onclick="removeFromCart('L1')">supprimer</button> 
+                                </td>
                             </tr>
-                            <tr>
+                            <tr id="L2">
                                 <td class="product-thumbnail"><a href="#"><img src="../assets/images1/filter/product-09.webp"> </a></td>
                                 <td><a href="#">Montre </a></td>
                                 <td><a href="#">100 DT</a></td>
                                 <td><input type="number" value="1"></td>
                                 <td>100 DT</td>
-                                <td><a href="#"><i class="fa fa-times"></i></a></td>
+                                <td> 
+                                    <button class="btn btn-sm btn-danger" onclick="removeFromCart('L2')">supprimer</button> 
+                                </td>
                             </tr> 
                             </tbody>
                         </table>
@@ -294,5 +298,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>

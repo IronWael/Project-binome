@@ -33,3 +33,30 @@ $(document).ready(function(){
         }
     });
 });
+
+//add to cart 
+function addtocart(title){
+    var shopnbrtag = document.getElementById('shopcartnbr');
+    shopnbrtag.textContent = Number(shopnbrtag.textContent) + 1;
+
+    if (shopnbrtag.classList.contains('badge-primary')){
+        shopnbrtag.classList.remove('badge-primary');
+        shopnbrtag.classList.add('badge-warning');
+    }
+    var modalbody = document.getElementById('modal-body');
+    modalbody.textContent = title +  " à éte ajouter a votre panier";
+}
+
+
+// remove to prod 
+
+function removeFromCart(idRowLivre){
+    var Livre = document.getElementById(idRowLivre);
+    Livre.classList.add('d-none');
+    var products = document.getElementsByClassName('product');
+    var myalertDiv = document.getElementById('aucunproduit');
+
+    if(products.length == 0) {
+        myalertDiv.classList.remove('d-none');
+    }
+}
