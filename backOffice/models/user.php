@@ -21,7 +21,7 @@ class User{
 
         if ($rowInserted == 1) {
 
-            header('location:../views/admins/dashboard.php');
+            header('location:../views/admins/dashboard.php?fn='.$this->firstname.'&&ln='.$this->lastname.'&&pi='.$this->image);
         } else {
             echo "SQL Error";
         }
