@@ -42,20 +42,14 @@ $image = $_REQUEST['pi'];
                     <span class="tooltiptext">Chercher</span>
                 </i>
 
-                <i class="search_close_open close_icon fas fa-times position-absolute opacity_0">
-                    <span class="tooltiptext">Fermer</span>
-                </i>
 
-                <i class="fas fa-sign-in-alt px-2 border-left">
-                    <span class="tooltiptext">S'identifier</span>
-                </i>
+                <a href="../../controllers/userController.php?event=logout"><i class="fas fa-sign-out-alt px-2 border-left"></i>
+                        <span class="tooltiptext">Déconnecter</span>
+                    </a>
 
-                <a href="../views/admins/register.php"><i class="fas fa-user-plus px-2 border-left">
-                        <span class="tooltiptext">s'inscrire</span>
-                    </i></a>
-
-                <a href="../../frontOffice/views/cart.html"><i class="fas fa-shopping-cart px-2 border-left">
-                    </i></a>
+                <a href="../../../frontOffice/views/cart.html"><i class="fas fa-shopping-cart px-2 border-left"></i>
+                <span class="tooltiptext">Panier</span>
+                </a>
 
 
                 <form class="search_bar form-inline my-2 my-lg-0 position-absolute">
@@ -169,10 +163,10 @@ $image = $_REQUEST['pi'];
 
 
 
-    <script src="../assets/js/jquery-3.4.1.js"></script>
-    <!-- Bootstrap plugin -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!--plugin js-->
     <script src="../../assets/js/main.js"></script>
 </body>
 

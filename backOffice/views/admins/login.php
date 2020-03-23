@@ -1,3 +1,15 @@
+<?php
+
+session_start();
+
+if (isset($_SESSION['email']) && !empty($_SESSION['email'])) {
+    
+    header('location:dashboard.php?fn='.$_SESSION['firstname'].'&&ln='.$_SESSION['lastname'].'&&pi='.$_SESSION['image']);
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="../../assets/css/login.css">
-    <title>s'inscrire</title>
+    <title>Identification</title>
 </head>
 
 <body>
@@ -28,7 +40,7 @@
                 </div>
                 <div class="topbar col-md-4 text-right">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
-                        <img class="mr-2" src="../image/Tunisia-Flag-icon.png">TN / DT
+                        <img class="mr-2" src="../../assets/images1/Tunisia-Flag-icon.png">TN / DT
                     </a>
 
                 </div>
@@ -108,90 +120,58 @@
     </nav>
     <!-----s'identifier -->
     <section style="margin-top: 100px;">
-        <form class="container" method="POST" action="../../controllers/userController.php?event=register"
-        enctype="multipart/form-data">
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="firstname">Nom</label>
-                    <input type="text" class="form-control" name="firstname" id="firstname"
-                    onchange="return validate('firstname','firstnamegood','firstnamebad')" required>
-                    <div class="valid-feedback d-none" id="firstnamegood">
-                        Looks good!
+        <form class="container" method="POST" action="../../controllers/userController.php?event=login">
+            <?php
+        if (isset($_GET['error']) && !empty($_GET['error'])) {
+
+            if ($_GET['error'] == 'true') {
+                echo "<div class='form-row'>
+                    <div class='col'>
+                        <div class='alert alert-danger'>Email or Password are incorrect !</div>
                     </div>
-                   <div class="invalid-feedback d-none" id="firstnamebad">
-                       Please enter your first name.
-                    </div>
+                </div>";
+            }else if($_GET['error'] == 'notallowed'){
+                echo "<div class='form-row'>
+                <div class='col'>
+                    <div class='alert alert-danger'>You are not connected!</div>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="lastname">Prenom</label>
-                    <input type="text" class="form-control" name="lastname" id="lastname"
-                    onchange="return validate('lastname','lastnamegood','lastnamebad')" required>
-                    <div class="valid-feedback d-none" id="lastnamegood">
-                       Looks good!
-                    </div>
-                    <div class="invalid-feedback d-none" id="lastnamebad">
-                       Please enter your last name
-                    </div>
+            </div>";  
+            }else if ($_GET['error'] == 'false') {
+                echo "<div class='form-row'>
+                <div class='col'>
+                    <div class='alert alert-info'>Bye bye !</div>
                 </div>
-            </div>
+            </div>";  
+            }
+        } ?>
+
+
 
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="password">Mot de passe</label>
-                    <input type="password" class="form-control" name="password" id="password"
-                    onchange="return validate('password','passwordgood','passwordbad')" required>
-                    <div class="valid-feedback d-none" id="passwordgood">
-            Looks good!
-          </div>
-          <div class="invalid-feedback d-none" id="passwordbad">
-            Please provide a valid Password.
-          </div>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="repassword">Repéter mot de passe</label>
-                    <input type="password" class="form-control" name="repassword" id="repassword"
-                    onchange="return validate('repassword','repasswordgood','repasswordbad')" required>
-                    <div class="valid-feedback d-none" id="repasswordgood">
-            Looks good!
-          </div>
-          <div class="invalid-feedback d-none" id="repasswordbad">
-            Please re-type your Password.
-          </div>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
                     <label for="email">Email</label>
-                    <div class="input-group">
-                    <div class="input-group-prepend">
-                       <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                   </div>
-                    <input type="text" class="form-control" name="email" id="email"
-                    onchange="return validate('email','emailgood','emailbad')" required>
-                    <div class="valid-feedback d-none" id="emailgood">
-                         Looks good!
-                    </div>
-                    <div class="invalid-feedback d-none" id="emailbad">
-                        Please enter your email.
-                    </div>
-                    </div>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="adress">Address</label>
-                    <input type="text" class="form-control" name="adress" id="adress"
-                        placeholder="Apartment, studio, or floor">
+                    <input type="text" class="form-control" id="email" name="email">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="image">Photo de profile</label>
-                    <div class="input-group">
-                        <input type="file" class="form-control" name="img"  required />
-                    </div>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" class="form-control" id="password" name="password">
                 </div>
             </div>
-            
-            <button type="submit" class="btn btn-primary" onclick="validatesubmit()">S'inscrire</button>
+
+
+
+
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">S'identifier</button>
         </form>
     </section>
 
@@ -267,10 +247,10 @@
                             <h3 class="widget-title text-light pb-1">Download our app</h3>
                             <div class="app-downold">
                                 <a href="#">
-                                    <img src="../image/available-google.png" alt="play-store">
+                                    <img src="../../assets/images1/available-google.png" alt="play-store">
                                 </a>
                                 <a href="#">
-                                    <img src="../image/store.png" alt="app-store">
+                                    <img src="../../assets/images1/store.png" alt="app-store">
                                 </a>
                             </div>
                         </div>
@@ -288,7 +268,7 @@
                             <p>&copy; 2020 all rights reserved Wael Mkacher & Ramzi Attig</p>
                         </div>
                         <div class="col-lg-6 col-12">
-                            <img src="../image/payments.png" alt="">
+                            <img src="../../assets/images1/payments.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -299,7 +279,7 @@
 
 
 
-    <script src="../../assets/js/inscriptionControl.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
