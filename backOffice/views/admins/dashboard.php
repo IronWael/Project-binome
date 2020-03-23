@@ -1,4 +1,7 @@
 <?php
+if (!isset($_SESSION['email']) || empty($_SESSION['email'])) {
+    header('location:login.php?error=notallowed');
+}
 $firstname = $_REQUEST['fn'];
 $lastname = $_REQUEST['ln'];
 $image = $_REQUEST['pi'];
@@ -32,7 +35,7 @@ $image = $_REQUEST['pi'];
 
     <!--start navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark py-1 py-md-2 text-capitalize w-100">
-        <a class="navbar-brand ml-lg-5 ml-sm-0" href="index.html" data-page="page01">Echri<span>Tounsi.</span></a>
+        <a class="navbar-brand ml-lg-5 ml-sm-0" href="../index.html" data-page="page01">Echri<span>Tounsi.</span></a>
 
         <div class="container-md">
 
