@@ -23,7 +23,12 @@ class User{
 
             header('location:../views/admins/dashboard.php?fn='.$this->firstname.'&&ln='.$this->lastname.'&&pi='.$this->image);
         } else {
-            echo "SQL Error";
+            $requette = "SELECT * from users where email ='$this->email'";
+            $data = $base->query($requette);
+            if ($data->rowCount() == 1) {
+            header('location:../views/admins/register.php?error=true');
+            
+            }
         }
         
     }
@@ -38,7 +43,10 @@ class User{
             session_start();
             $user = $data->fetchObject();
             $_SESSION['email'] = $user->email ;
-            header('location:../views/admins/dashboard.php');
+            $_SESSION['firstname'] = $user->firstname ;
+            $_SESSION['lastname'] = $user->lastname ;
+            $_SESSION['image'] = $user->image ;
+            header('location:../views/admins/dashboard.php?fn='.$this->firstname.'&&ln='.$this->lastname.'&&pi='.$this->image);
         }else{
             header('location:../views/admins/login.php?error=true');
         }
