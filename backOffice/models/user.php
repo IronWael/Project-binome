@@ -23,6 +23,9 @@ class User{
                 session_start();
                 
                 $_SESSION['email'] = $this->email ;
+                $_SESSION['firstname'] = $this->firstname ;
+                $_SESSION['lastname'] = $this->lastname ;
+                $_SESSION['image'] = $this->image ;
                 header('location:../views/admins/dashboard.php?fn='.$this->firstname.'&&ln='.$this->lastname.'&&pi='.$this->image);
             } else {
            
