@@ -2,6 +2,7 @@
 
 session_start();
 
+
 if (isset($_SESSION['email']) && !empty($_SESSION['email'])) {
     
     header('location:dashboard.php?fn='.$_SESSION['firstname'].'&&ln='.$_SESSION['lastname'].'&&pi='.$_SESSION['image']);
@@ -131,6 +132,7 @@ if (isset($_SESSION['email']) && !empty($_SESSION['email'])) {
                     </div>
                 </div>";
             }else if($_GET['error'] == 'notallowed'){
+                
                 echo "<div class='form-row'>
                 <div class='col'>
                     <div class='alert alert-danger'>You are not connected!</div>

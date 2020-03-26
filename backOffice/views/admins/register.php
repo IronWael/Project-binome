@@ -110,6 +110,24 @@
     <section style="margin-top: 100px;">
         <form class="container" method="POST" action="../../controllers/userController.php?event=register"
         enctype="multipart/form-data">
+        <?php
+        if (isset($_GET['error1']) && !empty($_GET['error1'])) {
+
+            if ($_GET['error1'] == 'true') {
+                echo "<div class='form-row'>
+                    <div class='col'>
+                        <div class='alert alert-danger'>You didn't re-type your password correctly!</div>
+                    </div>
+                </div>";
+            } else {
+                echo "<div class='form-row'>
+                    <div class='col'>
+                        <div class='alert alert-danger'>This mail is used, Please enter another adress mail!</div>
+                    </div>
+                </div>";
+            }
+        }
+            ?>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="firstname">Nom</label>

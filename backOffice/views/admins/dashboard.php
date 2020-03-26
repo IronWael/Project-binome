@@ -1,7 +1,10 @@
 <?php
+session_start();
+
 if (!isset($_SESSION['email']) || empty($_SESSION['email'])) {
     header('location:login.php?error=notallowed');
 }
+
 $firstname = $_REQUEST['fn'];
 $lastname = $_REQUEST['ln'];
 $image = $_REQUEST['pi'];
