@@ -1,7 +1,7 @@
 body {
     width: 100%;
     font-family:  Poppins, sans-serif, Montserrat;
-    overflow: auto;
+    /*overflow: hidden;*/
     overflow-x: hidden !important;
 }
 a {color: #999;}
@@ -39,6 +39,7 @@ a:hover{text-decoration: none;}
 .navbar-collapse {font-size: 12px;}
 
 .navbar-dark .navbar-nav .nav-link {color: #fff;}
+.navbar .nav_icons a {color: #fff;}
 
 .form-control:focus {box-shadow: none;}
 
