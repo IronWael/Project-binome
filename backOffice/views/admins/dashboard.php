@@ -5,15 +5,16 @@ if (!isset($_SESSION['email']) || empty($_SESSION['email'])) {
     header('location:login.php?error=notallowed');
 }
 if (isset($_SESSION['email']) && !empty($_SESSION['email'])) {
-    
-$firstname = $_SESSION['firstname'];
-$lastname = $_SESSION['lastname'];
-$image = $_SESSION['image'];
-}else{
 
-$firstname = $_REQUEST['fn'];
-$lastname = $_REQUEST['ln'];
-$image = $_REQUEST['pi'];}
+    $firstname = $_SESSION['firstname'];
+    $lastname = $_SESSION['lastname'];
+    $image = $_SESSION['image'];
+} else {
+
+    $firstname = $_REQUEST['fn'];
+    $lastname = $_REQUEST['ln'];
+    $image = $_REQUEST['pi'];
+}
 
 
 ?>
@@ -33,11 +34,11 @@ $image = $_REQUEST['pi'];}
     <!--Font awesome library-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
     <!--bootstrap file -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
     <!--<link rel="stylesheet" href="../../assets/css/style.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../assets/css/styleDashboard.css">
+    <!--<link rel="stylesheet" href="../../assets/css/styles.css">-->
     <title>EchriTounsi</title>
 </head>
 
@@ -54,15 +55,15 @@ $image = $_REQUEST['pi'];}
                 <i class="search_close_open fas fa-search px-2 position-relative">
                     <span class="tooltiptext">Chercher</span>
                 </i>
+                <i class="search_close_open close_icon fas fa-times position-absolute opacity_0">
+                    <span class="tooltiptext">Fermer</span>
+                </i>
 
-
-                <a href="../../controllers/userController.php?event=logout"><i class="fas fa-sign-out-alt px-2 border-left"></i>
-                        <span class="tooltiptext">Déconnecter</span>
-                    </a>
-
-                <a href="../../../frontOffice/views/cart.html"><i class="fas fa-shopping-cart px-2 border-left"></i>
-                <span class="tooltiptext">Panier</span>
+                <a href="../../controllers/userController.php?event=logout"><i class="fas fa-sign-out-alt px-2 border-left">
+                    <span class="tooltiptext">Déconnecter</span></i>
                 </a>
+
+                
 
 
                 <form class="search_bar form-inline my-2 my-lg-0 position-absolute">
@@ -78,10 +79,10 @@ $image = $_REQUEST['pi'];}
         <div class="sidebar col-sm-3 col-lg-2">
             <div class="profile-sidebar">
                 <div class="profile-userpic">
-                    <img src="../../assets/image/<?php echo $image?>" alt="">
+                    <img src="../../assets/image/<?php echo $image ?>" alt="">
                 </div>
                 <div class="profile-usertitle">
-                    <div class="profile-usertitle-name"><?php echo $firstname?> <?php echo $lastname?></div>
+                    <div class="profile-usertitle-name text-capitalize"><?php echo $firstname ?> <?php echo $lastname ?></div>
                     <div class="profile-usertitle-status">
                         <span class="indicator label-success"></span>
                         Online
@@ -93,7 +94,7 @@ $image = $_REQUEST['pi'];}
             </div>
             <div class="divider"></div>
             <div class="row">
-                <div class="col-md-12 list float-left border-top">
+                <div class="col-md-12 list border-top">
                     <a href="">
                         <i class="fa fa-dashboard px-2"></i>
 
@@ -119,7 +120,13 @@ $image = $_REQUEST['pi'];}
                         Orders
                     </a>
                 </div>
-
+                <div class="col-md-12 list">
+                    <a href="">
+                    <i class="fas fa-cog px-2"></i>
+                        Parametres
+                    </a>
+                </div>
+                
 
 
             </div>
@@ -139,15 +146,57 @@ $image = $_REQUEST['pi'];}
 
 
                 </div>
-            </div>
-            <div class="row">
+
+
                 <div class="col-lg-12">
                     <h1 class="header">Dashboard</h1>
                 </div>
             </div>
+            <div class="container">
+                <div class=" panel-container">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
+                            <div class="panel  panel-widget border-right">
+                                <div class="row no-padding">
+                                    <i class="fas fa-xl fa-shopping-cart color-blue col-md-12"></i>
+                                    <div class="large col-md-12">120</div>
+                                    <div class="text-muted col-md-12">New Orders</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
+                            <div class="panel  panel-widget border-right">
+                                <div class="row no-padding">
+                                    <i class="fas fa-xl fa-comments color-orange col-md-12"></i>
+                                    <div class="large col-md-12">52</div>
+                                    <div class="text-muted col-md-12">Comments</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
+                            <div class="panel  panel-widget border-right">
+                                <div class="row no-padding">
+                                    <i class="fas fa-xl fa-users color-teal col-md-12"></i>
+                                    <div class="large col-md-12">24</div>
+                                    <div class="text-muted col-md-12">New Users</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
+                            <div class="panel panel-widget ">
+                                <div class="row no-padding">
+                                    <i class="fas fa-xl fa-search color-red col-md-12"></i>
+                                    <div class="large col-md-12">25.2k</div>
+                                    <div class="text-muted col-md-12">Page Views</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.row-->
+                </div>
+            </div>
 
-
-
+            
 
 
         </div>
@@ -176,7 +225,7 @@ $image = $_REQUEST['pi'];}
 
 
 
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
