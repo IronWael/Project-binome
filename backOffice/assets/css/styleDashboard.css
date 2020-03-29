@@ -331,3 +331,24 @@ h1.header {
     color: #373b45;
     font-size: 3em;
 }
+
+/***Products***/
+.products {
+    border-radius: 10px !important;
+}
+.accordion .card-header {
+    background: #fff !important;
+}
+.accordion {
+    border-radius: 20px !important;
+}
+.accordion .btn {
+    text-decoration: none !important;
+    color: #999;
+}
+.accordion .btn :hover {
+    color: #b48614 !important;
+}
+.accordion .btn :focus {
+    color: #b48614 !important;
+}
