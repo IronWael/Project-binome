@@ -9,7 +9,7 @@ if (isset($_GET['event']) && !empty($_GET['event'])) {
     if ($event == 'register') {
         # code Register
         $user = new User();
-
+        $user->repassword = md5($_POST['repassword']);
         $user->firstname = $_POST['firstname'];
         $user->lastname = $_POST['lastname'];
         $user->password = md5($_POST['password']);

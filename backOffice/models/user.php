@@ -2,7 +2,7 @@
 include "../configdb/db_connector.php";
 
 class User{
-
+    public $repassword;
     public $firstname;
     public $lastname;
     public $password;
@@ -12,26 +12,34 @@ class User{
 
 
     function insert(){
-        $base = connect_to_db();
-        $requette = "INSERT INTO users values (null,'$this->firstname','$this->lastname','$this->password','$this->email','$this->adress','$this->image','admin')";
+        
+        if (($this->password)==($this->repassword)){
+            $base = connect_to_db();
+          $requette = "INSERT INTO users values (null,'$this->firstname','$this->lastname','$this->password','$this->email','$this->adress','$this->image','admin')";
 
-        $rowInserted = $base->exec($requette);
+          $rowInserted = $base->exec($requette);
 
-
-
-        if ($rowInserted == 1) {
-
-            header('location:../views/admins/dashboard.php?fn='.$this->firstname.'&&ln='.$this->lastname.'&&pi='.$this->image);
-        } else {
-            $requette = "SELECT * from users where email ='$this->email'";
-            $data = $base->query($requette);
-            if ($data->rowCount() == 1) {
-            header('location:../views/admins/register.php?error=true');
+            if ($rowInserted == 1) {
+                session_start();
+                
+                $_SESSION['email'] = $this->email ;
+                $_SESSION['firstname'] = $this->firstname ;
+                $_SESSION['lastname'] = $this->lastname ;
+                $_SESSION['image'] = $this->image ;
+                header('location:../views/admins/dashboard.php?fn='.$this->firstname.'&&ln='.$this->lastname.'&&pi='.$this->image);
+            } else {
+           
+                header('location:../views/admins/register.php?error1=true1');
             
             }
-        }
         
+        
+        } else {
+            header('location:../views/admins/register.php?error1=true');
+        }
     }
+
+
 
     function login(){
         $base = connect_to_db();
@@ -46,7 +54,7 @@ class User{
             $_SESSION['firstname'] = $user->firstname ;
             $_SESSION['lastname'] = $user->lastname ;
             $_SESSION['image'] = $user->image ;
-            header('location:../views/admins/dashboard.php?fn='.$this->firstname.'&&ln='.$this->lastname.'&&pi='.$this->image);
+            header('location:../views/admins/dashboard.php?fn='.$user->firstname.'&&ln='.$user->lastname.'&&pi='.$user->image);
         }else{
             header('location:../views/admins/login.php?error=true');
         }

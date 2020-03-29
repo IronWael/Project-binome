@@ -39,7 +39,7 @@
 
     <!--start navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark py-1 py-md-2 text-capitalize w-100">
-        <a class="navbar-brand ml-lg-5 ml-sm-0" href="index.html" data-page="page01">Echri<span>Tounsi.</span></a>
+        <a class="navbar-brand ml-lg-5 ml-sm-0" href="../index.html" data-page="page01">Echri<span>Tounsi.</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-mobile"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -54,7 +54,7 @@
                     </li>
 
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="pages/vetements.html" data-page="page02">vetements</a>
+                        <a class="nav-link" href="../../frontOffice/views/vetements.html" data-page="page02">vetements</a>
                     </li>
 
                     <li class="nav-item px-2">
@@ -85,15 +85,15 @@
                     <span class="tooltiptext">Fermer</span>
                 </i>
 
-                <i class="fas fa-sign-in-alt px-2 border-left">
+                <a href="login.php"><i class="fas fa-sign-in-alt px-2 border-left">
                     <span class="tooltiptext">S'identifier</span>
-                </i>
+                </i></a>
 
-                <i class="fas fa-user-plus px-2 border-left">
+                <a href="register.php"><i class="fas fa-user-plus px-2 border-left">
                     <span class="tooltiptext">s'inscrire</span>
-                </i>
+                </i></a>
 
-                <a href="pages/cart.html"><i class="fas fa-shopping-cart px-2 border-left">
+                <a href="../../frontOffice/views/cart.html"><i class="fas fa-shopping-cart px-2 border-left">
                     </i></a>
 
 
@@ -110,6 +110,24 @@
     <section style="margin-top: 100px;">
         <form class="container" method="POST" action="../../controllers/userController.php?event=register"
         enctype="multipart/form-data">
+        <?php
+        if (isset($_GET['error1']) && !empty($_GET['error1'])) {
+
+            if ($_GET['error1'] == 'true') {
+                echo "<div class='form-row'>
+                    <div class='col'>
+                        <div class='alert alert-danger'>You didn't re-type your password correctly!</div>
+                    </div>
+                </div>";
+            } else {
+                echo "<div class='form-row'>
+                    <div class='col'>
+                        <div class='alert alert-danger'>This mail is used, Please enter another adress mail!</div>
+                    </div>
+                </div>";
+            }
+        }
+            ?>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="firstname">Nom</label>
